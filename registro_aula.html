@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRO DE AULAS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <form id="formAula">
+        <h1 id="titulo">REGISTRO DE AULAS</h1>
+
+        <!--CAMPO 1-->
+        <div class="formulario">
+            <label for="codigo_aula">CODIGO DEL AULA</label><br>
+            <input type="text" id="codigo_aula" name="codigo_aula">
+        </div><br>
+
+        <!--CAMPO 2-->
+        <div class="formulario">
+            <label for="nombre_aula">NOMBRE / NUMERO DE AULA</label><br>
+            <input type="text" id="nombre_aula" name="nombre_aula">
+        </div><br>
+
+        <!--CAMPO 3-->
+        <div class="formulario">
+            <label for="pabellon">PABELLON / EDIFICIO</label><br>
+            <select id="pabellon" name="pabellon">
+                <option value="pabellon_a">PABELLON A</option>
+                <option value="pabellon_b">PABELLON B</option>
+                <option value="pabellon_c">PABELLON C</option>
+                <option value="pabellon_central">PABELLON CENTRAL</option>
+            </select>
+        </div><br>
+
+        <!--CAMPO 4-->
+        <div class="formulario">
+            <label for="piso">PISO</label><br>
+            <select id="piso" name="piso">
+                <option value="1">1ER PISO</option>
+                <option value="2">2DO PISO</option>
+                <option value="3">3ER PISO</option>
+                <option value="4">4TO PISO</option>
+            </select>
+        </div><br>
+
+        <!--CAMPO 5-->
+        <div class="formulario">
+            <label for="capacidad">CAPACIDAD DE ESTUDIANTES</label><br>
+            <input type="text" id="capacidad" name="capacidad">
+        </div><br>
+
+        <!--CAMPO 6-->
+        <div class="formulario">
+            <label for="tipo_aula">TIPO DE AULA</label><br>
+            <select id="tipo_aula" name="tipo_aula">
+                <option value="teorica">AULA TEORICA</option>
+                <option value="computo">LABORATORIO DE COMPUTO</option>
+                <option value="taller">TALLER ESPECIALIZADO</option>
+                <option value="auditorio">AUDITORIO</option>
+            </select>
+        </div><br>
+
+        <!--CAMPO 7-->
+        <div class="formulario">
+            <label for="proyector">CUENTA CON PROYECTOR</label><br>
+            <select id="proyector" name="proyector">
+                <option value="si">SI</option>
+                <option value="no">NO</option>
+            </select>
+        </div><br>
+
+        <!--CAMPO 8-->
+        <div class="formulario">
+            <label for="aire">AIRE ACONDICIONADO</label><br>
+            <select id="aire" name="aire">
+                <option value="si">SI</option>
+                <option value="no">NO</option>
+            </select>
+        </div><br>
+
+        <!--CAMPO 9-->
+        <div class="formulario">
+            <label for="computadoras">CANTIDAD DE COMPUTADORAS</label><br>
+            <input type="text" id="computadoras" name="computadoras">
+        </div><br>
+
+        <!--CAMPO 10-->
+        <div class="formulario">
+            <label for="estado">ESTADO DEL AULA</label><br>
+            <select id="estado" name="estado">
+                <option value="disponible">DISPONIBLE</option>
+                <option value="mantenimiento">EN MANTENIMIENTO</option>
+                <option value="ocupado">OCUPADO</option>
+            </select>
+        </div><br>
+
+        <button type="submit">Guardar</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

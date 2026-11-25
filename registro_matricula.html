@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRO DE MATRICULA</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <form id="formMatricula">
+        <h1 id="titulo">REGISTRO DE MATRICULA</h1>
+
+        <!--CAMPO 1-->
+        <div class="formulario">
+            <label for="codigo_matricula">CODIGO DE MATRICULA</label><br>
+            <input type="text" id="codigo_matricula" name="codigo_matricula">
+        </div><br>
+
+        <!--CAMPO 2-->
+        <div class="formulario">
+            <label for="dni_alumno">DNI DEL ALUMNO</label><br>
+            <input type="text" id="dni_alumno" name="dni_alumno">
+        </div><br>
+
+        <!--CAMPO 3-->
+        <div class="formulario">
+            <label for="nombres_alumno">NOMBRES Y APELLIDOS DEL ALUMNO</label><br>
+            <input type="text" id="nombres_alumno" name="nombres_alumno">
+        </div><br>
+
+        <!--CAMPO 4-->
+        <div class="formulario">
+            <label for="periodo">PERIODO ACADEMICO</label><br>
+            <select id="periodo" name="periodo">
+                <option value="2026-1">2026 - I</option>
+                <option value="2026-2">2026 - II</option>
+            </select>
+        </div><br>
+
+        <!--CAMPO 5-->
+        <div class="formulario">
+            <label for="fecha_matricula">FECHA DE MATRICULA</label><br>
+            <input type="text" id="fecha_matricula" name="fecha_matricula">
+        </div><br>
+
+        <!--CAMPO 6-->
+        <div class="formulario">
+            <label for="carrera">CARRERA</label><br>
+            <select id="carrera" name="carrera">
+                <option value="diseno_web">DISEÑO WEB</option>
+                <option value="ing_software">ING. SOFTWARE</option>
+                <option value="ing_sistemas">ING. SISTEMAS</option>
+                <option value="computacion">COMPUTACION INFORMATICA</option>
+            </select>
+        </div><br>
+
+        <!--CAMPO 7-->
+        <div class="formulario">
+            <label for="ciclo">CICLO</label><br>
+            <select id="ciclo" name="ciclo">
+                <option value="I">CICLO I</option>
+                <option value="II">CICLO II</option>
+                <option value="III">CICLO III</option>
+                <option value="IV">CICLO IV</option>
+                <option value="V">CICLO V</option>
+                <option value="VI">CICLO VI</option>
+            </select>
+        </div><br>
+
+        <!--CAMPO 8-->
+        <div class="formulario">
+            <label for="turno">TURNO</label><br>
+            <select id="turno" name="turno">
+                <option value="manana">MAÑANA</option>
+                <option value="tarde">TARDE</option>
+                <option value="noche">NOCHE</option>
+            </select>
+        </div><br>
+
+        <!--CAMPO 9-->
+        <div class="formulario">
+            <label for="tipo_matricula">TIPO DE MATRICULA</label><br>
+            <select id="tipo_matricula" name="tipo_matricula">
+                <option value="regular">REGULAR</option>
+                <option value="extemporanea">EXTEMPORANEA</option>
+                <option value="reingreso">REINGRESO</option>
+            </select>
+        </div><br>
+
+        <!--CAMPO 10-->
+        <div class="formulario">
+            <label for="metodo_pago">METODO DE PAGO</label><br>
+            <select id="metodo_pago" name="metodo_pago">
+                <option value="efectivo">EFECTIVO</option>
+                <option value="tarjeta">TARJETA DE CREDITO / DEBITO</option>
+                <option value="transferencia">TRANSFERENCIA BANCARIA</option>
+            </select>
+        </div><br>
+
+        <!--CAMPO 11-->
+        <div class="formulario">
+            <label for="nro_operacion">NUMERO DE OPERACION</label><br>
+            <input type="text" id="nro_operacion" name="nro_operacion">
+        </div><br>
+
+        <!--CAMPO 12-->
+        <div class="formulario">
+            <label for="monto">MONTO TOTAL</label><br>
+            <input type="text" id="monto" name="monto">
+        </div><br>
+
+        <button type="submit">Guardar</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

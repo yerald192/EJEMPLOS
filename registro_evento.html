@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRO DE EVENTOS ACADEMICOS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <form id="formEvento">
+        <h1 id="titulo">REGISTRO DE EVENTOS ACADEMICOS</h1>
+
+        <!--CAMPO 1-->
+        <div class="formulario">
+            <label for="nombre_evento">NOMBRE DEL EVENTO</label><br>
+            <input type="text" id="nombre_evento" name="nombre_evento">
+        </div><br>
+
+        <!--CAMPO 2-->
+        <div class="formulario">
+            <label for="tipo_evento">TIPO DE EVENTO</label><br>
+            <select id="tipo_evento" name="tipo_evento">
+                <option value="conferencia">CONFERENCIA</option>
+                <option value="seminario">SEMINARIO</option>
+                <option value="taller">TALLER PRACTICO</option>
+                <option value="hackathon">HACKATHON</option>
+                <option value="feria">FERIA DE PROYECTOS</option>
+            </select>
+        </div><br>
+
+        <!--CAMPO 3-->
+        <div class="formulario">
+            <label for="fecha">FECHA DEL EVENTO</label><br>
+            <input type="text" id="fecha" name="fecha">
+        </div><br>
+
+        <!--CAMPO 4-->
+        <div class="formulario">
+            <label for="hora_inicio">HORA DE INICIO</label><br>
+            <input type="text" id="hora_inicio" name="hora_inicio">
+        </div><br>
+
+        <!--CAMPO 5-->
+        <div class="formulario">
+            <label for="hora_fin">HORA DE TERMINO</label><br>
+            <input type="text" id="hora_fin" name="hora_fin">
+        </div><br>
+
+        <!--CAMPO 6-->
+        <div class="formulario">
+            <label for="lugar">LUGAR / SALON</label><br>
+            <input type="text" id="lugar" name="lugar">
+        </div><br>
+
+        <!--CAMPO 7-->
+        <div class="formulario">
+            <label for="ponente">EXPOSITOR / PONENTE</label><br>
+            <input type="text" id="ponente" name="ponente">
+        </div><br>
+
+        <!--CAMPO 8-->
+        <div class="formulario">
+            <label for="dirigido_a">DIRIGIDO A</label><br>
+            <select id="dirigido_a" name="dirigido_a">
+                <option value="estudiantes">ESTUDIANTES</option>
+                <option value="docentes">DOCENTES</option>
+                <option value="egresados">EGRESADOS</option>
+                <option value="publico">PUBLICO EN GENERAL</option>
+            </select>
+        </div><br>
+
+        <!--CAMPO 9-->
+        <div class="formulario">
+            <label for="costo">COSTO DE INGRESO</label><br>
+            <select id="costo" name="costo">
+                <option value="gratuito">GRATUITO</option>
+                <option value="pago">CON COSTO</option>
+            </select>
+        </div><br>
+
+        <!--CAMPO 10-->
+        <div class="formulario">
+            <label for="cupos">CUPOS DISPONIBLES</label><br>
+            <input type="text" id="cupos" name="cupos">
+        </div><br>
+
+        <!--CAMPO 11-->
+        <div class="formulario">
+            <label for="certificacion">CERTIFICACION</label><br>
+            <select id="certificacion" name="certificacion">
+                <option value="si">INCLUYE CERTIFICADO DIGITAL</option>
+                <option value="no">NO INCLUYE CERTIFICADO</option>
+            </select>
+        </div><br>
+
+        <button type="submit">Guardar</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

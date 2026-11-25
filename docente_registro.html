@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRO DE DOCENTES</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <form id="formDocente">
+        <h1 id="titulo">REGISTRO DE DOCENTES</h1>
+        <!--CAMPO 1-->
+        <div class="formulario">
+            <label for="nombre">NOMBRE</label><br>
+            <input type="text" id="nombre" name="nombre">
+        </div><br>
+        <!--CAMPO 2-->
+        <div class="formulario">
+            <label for="paterno">APELLIDO PATERNO</label><br>
+            <input type="text" id="paterno" name="paterno">
+        </div><br>
+        ! <!--CAMPO 3-->
+        <div class="formulario">
+            <label for="materno">APELLIDO MATERNO</label><br>
+            <input type="text" id="materno" name="materno">
+        </div><br>
+        <!--CAMPO 4-->
+        <div class="formulario">
+            <label for="dni">DNI</label><br>
+            <input type="text" id="dni" name="dni">
+        </div><br>
+        <!--CAMPO 5-->
+        <div class="formulario">
+            <label for="correo">CORREO ELECTRONICO</label><br>
+            <input type="text" id="correo" name="correo">
+        </div><br>
+        <!--CAMPO 6-->
+        <div class="formulario">
+            <label for="telefono">TELEFONO</label><br>
+            <input type="text" id="telefono" name="telefono">
+        </div><br>
+        <!--CAMPO 7-->
+        <div class="formulario">
+            <label for="direccion">DIRECCION</label><br>
+            <input type="text" id="direccion" name="direccion">
+        </div><br>
+        <!--CAMPO 8-->
+        <div class="formulario">
+            <label for="edad">EDAD</label><br>
+            <input type="text" id="edad" name="edad">
+        </div><br>
+        <!--CAMPO 9-->
+        <div class="formulario">
+            <label for="fecha_nacimiento">FECHA DE NACIMIENTO</label><br>
+            <input type="text" id="fecha_nacimiento" name="fecha_nacimiento">
+        </div><br>
+        <!--CAMPO 10-->
+        <div class="formulario">
+            <label for="nacionalidad">NACIONALIDAD</label><br>
+            <input type="text" id="nacionalidad" name="nacionalidad">
+        </div><br>
+        <!--CAMPO 11-->
+        <div class="formulario">
+            <label for="grado_academico">GRADO ACADEMICO</label><br>
+            <input type="text" id="grado_academico" name="grado_academico">
+        </div><br>
+        <!--CAMPO 12-->
+        <div class="formulario">
+            <label for="universidad">UNIVERSIDAD</label><br>
+            <input type="text" id="universidad" name="universidad">
+        </div><br>
+        <!--CAMPO 13-->
+        <div class="formulario">
+            <label for="experiencia">AÑOS DE EXPERIENCIA</label><br>
+            <input type="text" id="experiencia" name="experiencia">
+        </div><br>
+        <!--CAMPO 14-->
+        <div class="formulario">
+            <label for="turno">TURNO</label><br>
+            <input type="text" id="turno" name="turno">
+        </div><br>
+        <!--CAMPO 15-->
+        <div class="formulario">
+            <label for="especialidad">ESPECIALIDAD</label><br>
+            <select id="especialidad" name="carrera">
+                <option value="diseno_web">DISEÑADOR WEB</option>
+                <option value="ing_software">ING. SOFTWARE</option>
+                <option value="ing_sistemas">ING. SISTEMAS</option>
+                <option value="computacion">COMPUTACION INFORMATICA</option>
+            </select>
+        </div><br>
+
+        <button type="submit">Guardar</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

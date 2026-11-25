@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRO DE HORARIOS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <form id="formHorario">
+        <h1 id="titulo">REGISTRO DE HORARIOS</h1>
+
+        <!--CAMPO 1-->
+        <div class="formulario">
+            <label for="codigo_horario">CODIGO DE HORARIO</label><br>
+            <input type="text" id="codigo_horario" name="codigo_horario">
+        </div><br>
+
+        <!--CAMPO 2-->
+        <div class="formulario">
+            <label for="curso">CURSO</label><br>
+            <input type="text" id="curso" name="curso">
+        </div><br>
+
+        <!--CAMPO 3-->
+        <div class="formulario">
+            <label for="docente">DOCENTE</label><br>
+            <input type="text" id="docente" name="docente">
+        </div><br>
+
+        <!--CAMPO 4-->
+        <div class="formulario">
+            <label for="aula">AULA ASIGNADA</label><br>
+            <input type="text" id="aula" name="aula">
+        </div><br>
+
+        <!--CAMPO 5-->
+        <div class="formulario">
+            <label for="dia">DIA DE LA SEMANA</label><br>
+            <select id="dia" name="dia">
+                <option value="lunes">LUNES</option>
+                <option value="martes">MARTES</option>
+                <option value="miercoles">MIERCOLES</option>
+                <option value="jueves">JUEVES</option>
+                <option value="viernes">VIERNES</option>
+                <option value="sabado">SABADO</option>
+            </select>
+        </div><br>
+
+        <!--CAMPO 6-->
+        <div class="formulario">
+            <label for="hora_inicio">HORA DE INICIO</label><br>
+            <input type="text" id="hora_inicio" name="hora_inicio">
+        </div><br>
+
+        <!--CAMPO 7-->
+        <div class="formulario">
+            <label for="hora_fin">HORA DE FIN</label><br>
+            <input type="text" id="hora_fin" name="hora_fin">
+        </div><br>
+
+        <!--CAMPO 8-->
+        <div class="formulario">
+            <label for="seccion">SECCION</label><br>
+            <select id="seccion" name="seccion">
+                <option value="A">GRUPO A</option>
+                <option value="B">GRUPO B</option>
+                <option value="C">GRUPO C</option>
+            </select>
+        </div><br>
+
+        <!--CAMPO 9-->
+        <div class="formulario">
+            <label for="turno">TURNO</label><br>
+            <select id="turno" name="turno">
+                <option value="manana">MAÑANA</option>
+                <option value="tarde">TARDE</option>
+                <option value="noche">NOCHE</option>
+            </select>
+        </div><br>
+
+        <!--CAMPO 10-->
+        <div class="formulario">
+            <label for="periodo">PERIODO ACADEMICO</label><br>
+            <input type="text" id="periodo" name="periodo">
+        </div><br>
+
+        <!--CAMPO 11-->
+        <div class="formulario">
+            <label for="capacidad_maxima">CAPACIDAD MAXIMA</label><br>
+            <input type="text" id="capacidad_maxima" name="capacidad_maxima">
+        </div><br>
+
+        <button type="submit">Guardar</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

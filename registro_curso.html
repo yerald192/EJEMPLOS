@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRO DE CURSOS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <form id="formCurso">
+        <h1 id="titulo">REGISTRO DE CURSOS</h1>
+
+        <!--CAMPO 1-->
+        <div class="formulario">
+            <label for="codigo_curso">CODIGO DEL CURSO</label><br>
+            <input type="text" id="codigo_curso" name="codigo_curso">
+        </div><br>
+
+        <!--CAMPO 2-->
+        <div class="formulario">
+            <label for="nombre_curso">NOMBRE DEL CURSO</label><br>
+            <input type="text" id="nombre_curso" name="nombre_curso">
+        </div><br>
+
+        <!--CAMPO 3-->
+        <div class="formulario">
+            <label for="creditos">CREDITOS</label><br>
+            <input type="text" id="creditos" name="creditos">
+        </div><br>
+
+        <!--CAMPO 4-->
+        <div class="formulario">
+            <label for="horas_teoricas">HORAS TEORICAS</label><br>
+            <input type="text" id="horas_teoricas" name="horas_teoricas">
+        </div><br>
+
+        <!--CAMPO 5-->
+        <div class="formulario">
+            <label for="horas_practicas">HORAS PRACTICAS</label><br>
+            <input type="text" id="horas_practicas" name="horas_practicas">
+        </div><br>
+
+        <!--CAMPO 6-->
+        <div class="formulario">
+            <label for="departamento">DEPARTAMENTO ACADEMICO</label><br>
+            <input type="text" id="departamento" name="departamento">
+        </div><br>
+
+        <!--CAMPO 7-->
+        <div class="formulario">
+            <label for="ciclo">CICLO</label><br>
+            <select id="ciclo" name="ciclo">
+                <option value="I">CICLO I</option>
+                <option value="II">CICLO II</option>
+                <option value="III">CICLO III</option>
+                <option value="IV">CICLO IV</option>
+                <option value="V">CICLO V</option>
+                <option value="VI">CICLO VI</option>
+            </select>
+        </div><br>
+
+        <!--CAMPO 8-->
+        <div class="formulario">
+            <label for="modalidad">MODALIDAD</label><br>
+            <select id="modalidad" name="modalidad">
+                <option value="presencial">PRESENCIAL</option>
+                <option value="virtual">VIRTUAL</option>
+                <option value="semipresencial">SEMIPRESENCIAL</option>
+            </select>
+        </div><br>
+
+        <!--CAMPO 9-->
+        <div class="formulario">
+            <label for="area">AREA DE ESTUDIO</label><br>
+            <select id="area" name="area">
+                <option value="desarrollo">DESARROLLO DE SOFTWARE</option>
+                <option value="redes">REDES Y CONECTIVIDAD</option>
+                <option value="bd">BASE DE DATOS</option>
+                <option value="ciencias">CIENCIAS BASICAS</option>
+            </select>
+        </div><br>
+
+        <!--CAMPO 10-->
+        <div class="formulario">
+            <label for="prerrequisito">PRERREQUISITO</label><br>
+            <input type="text" id="prerrequisito" name="prerrequisito">
+        </div><br>
+
+        <!--CAMPO 11-->
+        <div class="formulario">
+            <label for="docente">DOCENTE ASIGNADO</label><br>
+            <input type="text" id="docente" name="docente">
+        </div><br>
+
+        <!--CAMPO 12-->
+        <div class="formulario">
+            <label for="estado">ESTADO DEL CURSO</label><br>
+            <select id="estado" name="estado">
+                <option value="activo">ACTIVO</option>
+                <option value="inactivo">INACTIVO</option>
+            </select>
+        </div><br>
+
+        <button type="submit">Guardar</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,98 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REGISTRO DE DOCENTES</title>
+    <title>MENU DE EJEMPLOS DE FORMULARIOS</title>
     <link rel="stylesheet" href="estilo.css">
+    <style>
+        .menu-contenedor {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .lista-ejemplos {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 15px;
+        }
+        .lista-ejemplos li {
+            background-color: #f7f9fa;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            padding: 12px 16px;
+            transition: all 0.2s ease;
+        }
+        .lista-ejemplos li:hover {
+            border-color: rgb(10, 45, 243);
+            box-shadow: 0 4px 10px rgba(10, 45, 243, 0.15);
+            transform: translateY(-2px);
+        }
+        .lista-ejemplos a {
+            text-decoration: none;
+            color: #1a202c;
+            font-weight: bold;
+            display: block;
+        }
+        .lista-ejemplos a span {
+            color: rgb(10, 45, 243);
+            margin-right: 8px;
+        }
+    </style>
 </head>
 
 <body>
 
-    <form id="formDocente">
-        <h1 id="titulo">REGISTRO DE DOCENTES</h1>
+    <div class="menu-contenedor">
+        <h1>SISTEMA DE EJEMPLOS - 15 FORMULARIOS</h1>
+        <p style="text-align: center; color: #555;">Seleccione cualquiera de los ejemplos para ver el formulario:</p>
 
-        <div class="formulario">
-            <label for="nombre">NOMBRE</label><br>
-            <input type="text" id="nombre" name="nombre">
-        </div><br>
-
-        <div class="formulario">
-            <label for="paterno">APELLIDO PATERNO</label><br>
-            <input type="text" id="paterno" name="paterno">
-        </div><br>
-
-        <div class="formulario">
-            <label for="materno">APELLIDO MATERNO</label><br>
-            <input type="text" id="materno" name="materno">
-        </div><br>
-
-        <div class="formulario">
-            <label for="dni">DNI</label><br>
-            <input type="text" id="dni" name="dni">
-        </div><br>
-
-        <div class="formulario">
-            <label for="correo">CORREO ELECTRONICO</label><br>
-            <input type="text" id="correo" name="correo">
-        </div><br>
-
-        <div class="formulario">
-            <label for="telefono">TELEFONO</label><br>
-            <input type="text" id="telefono" name="telefono">
-        </div><br>
-
-        <div class="formulario">
-            <label for="direccion">DIRECCION</label><br>
-            <input type="text" id="direccion" name="direccion">
-        </div><br>
-
-        <div class="formulario">
-            <label for="edad">EDAD</label><br>
-            <input type="text" id="edad" name="edad">
-        </div><br>
-
-        <div class="formulario">
-            <label for="fecha_nacimiento">FECHA DE NACIMIENTO</label><br>
-            <input type="text" id="fecha_nacimiento" name="fecha_nacimiento">
-        </div><br>
-
-        <div class="formulario">
-            <label for="nacionalidad">NACIONALIDAD</label><br>
-            <input type="text" id="nacionalidad" name="nacionalidad">
-        </div><br>
-
-        <div class="formulario">
-            <label for="grado_academico">GRADO ACADEMICO</label><br>
-            <input type="text" id="grado_academico" name="grado_academico">
-        </div><br>
-
-        <div class="formulario">
-            <label for="universidad">UNIVERSIDAD</label><br>
-            <input type="text" id="universidad" name="universidad">
-        </div><br>
-
-        <div class="formulario">
-            <label for="experiencia">AÑOS DE EXPERIENCIA</label><br>
-            <input type="text" id="experiencia" name="experiencia">
-        </div><br>
-
-        <div class="formulario">
-            <label for="turno">TURNO</label><br>
-            <input type="text" id="turno" name="turno">
-        </div><br>
-
-        <div class="formulario">
-            <label for="especialidad">ESPECIALIDAD</label><br>
-            <select id="especialidad" name="carrera">
-                <option value="diseno_web">DISEÑADOR WEB</option>
-                <option value="ing_software">ING. SOFTWARE</option>
-                <option value="ing_sistemas">ING. SISTEMAS</option>
-                <option value="computacion">COMPUTACION INFORMATICA</option>
-            </select>
-        </div><br>
-    </form>
+        <ul class="lista-ejemplos">
+            <li><a href="docente_registro.html"><span>01.</span> Registro de Docentes</a></li>
+            <li><a href="registrar_alumno.html"><span>02.</span> Registro de Alumnos</a></li>
+            <li><a href="registro_curso.html"><span>03.</span> Registro de Cursos</a></li>
+            <li><a href="registro_matricula.html"><span>04.</span> Registro de Matrícula</a></li>
+            <li><a href="registro_apoderado.html"><span>05.</span> Registro de Apoderados</a></li>
+            <li><a href="registro_aula.html"><span>06.</span> Registro de Aulas</a></li>
+            <li><a href="registro_horario.html"><span>07.</span> Registro de Horarios</a></li>
+            <li><a href="registro_asistencia.html"><span>08.</span> Registro de Asistencia</a></li>
+            <li><a href="registro_calificaciones.html"><span>09.</span> Registro de Calificaciones</a></li>
+            <li><a href="registro_pago.html"><span>10.</span> Registro de Pagos y Pensiones</a></li>
+            <li><a href="registro_biblioteca.html"><span>11.</span> Registro de Libros de Biblioteca</a></li>
+            <li><a href="registro_evento.html"><span>12.</span> Registro de Eventos Académicos</a></li>
+            <li><a href="registro_taller.html"><span>13.</span> Registro de Talleres</a></li>
+            <li><a href="registro_practica.html"><span>14.</span> Registro de Prácticas Pre-Profesionales</a></li>
+            <li><a href="registro_beca.html"><span>15.</span> Registro de Solicitud de Beca</a></li>
+        </ul>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="app.js"></script>

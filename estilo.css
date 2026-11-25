@@ -1,5 +1,9 @@
 h1 {
     text-align: center;
     color: rgb(10, 45, 243);
+}
 
+.campo-activo {
+    outline: none;
+    border: 1.5px solid rgb(10, 45, 243);
 }

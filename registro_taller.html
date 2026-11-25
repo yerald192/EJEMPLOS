@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRO DE TALLERES</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <form id="formTaller">
+        <h1 id="titulo">REGISTRO DE TALLERES EXTRACURRICULARES</h1>
+
+        <!--CAMPO 1-->
+        <div class="formulario">
+            <label for="nombre_taller">NOMBRE DEL TALLER</label><br>
+            <input type="text" id="nombre_taller" name="nombre_taller">
+        </div><br>
+
+        <!--CAMPO 2-->
+        <div class="formulario">
+            <label for="categoria">CATEGORIA</label><br>
+            <select id="categoria" name="categoria">
+                <option value="deportes">DEPORTES</option>
+                <option value="arte">ARTE Y CULTURA</option>
+                <option value="liderazgo">LIDERAZGO Y ORATORIA</option>
+                <option value="idiomas">IDIOMAS</option>
+                <option value="tecnologia">TECNOLOGIA E INNOVACION</option>
+            </select>
+        </div><br>
+
+        <!--CAMPO 3-->
+        <div class="formulario">
+            <label for="instructor">INSTRUCTOR / ENTRENADOR</label><br>
+            <input type="text" id="instructor" name="instructor">
+        </div><br>
+
+        <!--CAMPO 4-->
+        <div class="formulario">
+            <label for="horas">HORAS SEMANALES</label><br>
+            <input type="text" id="horas" name="horas">
+        </div><br>
+
+        <!--CAMPO 5-->
+        <div class="formulario">
+            <label for="dias">DIAS DE CLASE</label><br>
+            <select id="dias" name="dias">
+                <option value="lunes_miercoles">LUNES Y MIERCOLES</option>
+                <option value="martes_jueves">MARTES Y JUEVES</option>
+                <option value="viernes">VIERNES</option>
+                <option value="sabados">SABADOS</option>
+            </select>
+        </div><br>
+
+        <!--CAMPO 6-->
+        <div class="formulario">
+            <label for="turno">TURNO</label><br>
+            <select id="turno" name="turno">
+                <option value="manana">MAÑANA</option>
+                <option value="tarde">TARDE</option>
+            </select>
+        </div><br>
+
+        <!--CAMPO 7-->
+        <div class="formulario">
+            <label for="lugar">LUGAR / ESPACIO</label><br>
+            <input type="text" id="lugar" name="lugar">
+        </div><br>
+
+        <!--CAMPO 8-->
+        <div class="formulario">
+            <label for="requisitos">REQUISITOS PREVIOS</label><br>
+            <input type="text" id="requisitos" name="requisitos">
+        </div><br>
+
+        <!--CAMPO 9-->
+        <div class="formulario">
+            <label for="materiales">MATERIALES REQUERIDOS</label><br>
+            <input type="text" id="materiales" name="materiales">
+        </div><br>
+
+        <!--CAMPO 10-->
+        <div class="formulario">
+            <label for="cupos">CUPOS MAXIMOS</label><br>
+            <input type="text" id="cupos" name="cupos">
+        </div><br>
+
+        <!--CAMPO 11-->
+        <div class="formulario">
+            <label for="fecha_inicio">FECHA DE INICIO</label><br>
+            <input type="text" id="fecha_inicio" name="fecha_inicio">
+        </div><br>
+
+        <button type="submit">Guardar</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

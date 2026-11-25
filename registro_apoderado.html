@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRO DE APODERADOS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <form id="formApoderado">
+        <h1 id="titulo">REGISTRO DE APODERADOS</h1>
+
+        <!--CAMPO 1-->
+        <div class="formulario">
+            <label for="nombres">NOMBRES DEL APODERADO</label><br>
+            <input type="text" id="nombres" name="nombres">
+        </div><br>
+
+        <!--CAMPO 2-->
+        <div class="formulario">
+            <label for="paterno">APELLIDO PATERNO</label><br>
+            <input type="text" id="paterno" name="paterno">
+        </div><br>
+
+        <!--CAMPO 3-->
+        <div class="formulario">
+            <label for="materno">APELLIDO MATERNO</label><br>
+            <input type="text" id="materno" name="materno">
+        </div><br>
+
+        <!--CAMPO 4-->
+        <div class="formulario">
+            <label for="dni">DNI</label><br>
+            <input type="text" id="dni" name="dni">
+        </div><br>
+
+        <!--CAMPO 5-->
+        <div class="formulario">
+            <label for="parentesco">PARENTESCO</label><br>
+            <select id="parentesco" name="parentesco">
+                <option value="padre">PADRE</option>
+                <option value="madre">MADRE</option>
+                <option value="tutor">TUTOR LEGAL</option>
+                <option value="hermano">HERMANO(A)</option>
+                <option value="abuelo">ABUELO(A)</option>
+            </select>
+        </div><br>
+
+        <!--CAMPO 6-->
+        <div class="formulario">
+            <label for="telefono">TELEFONO PRINCIPAL</label><br>
+            <input type="text" id="telefono" name="telefono">
+        </div><br>
+
+        <!--CAMPO 7-->
+        <div class="formulario">
+            <label for="telefono_secundario">TELEFONO SECUNDARIO</label><br>
+            <input type="text" id="telefono_secundario" name="telefono_secundario">
+        </div><br>
+
+        <!--CAMPO 8-->
+        <div class="formulario">
+            <label for="correo">CORREO ELECTRONICO</label><br>
+            <input type="text" id="correo" name="correo">
+        </div><br>
+
+        <!--CAMPO 9-->
+        <div class="formulario">
+            <label for="direccion">DIRECCION DE DOMICILIO</label><br>
+            <input type="text" id="direccion" name="direccion">
+        </div><br>
+
+        <!--CAMPO 10-->
+        <div class="formulario">
+            <label for="ocupacion">OCUPACION / LUGAR DE TRABAJO</label><br>
+            <input type="text" id="ocupacion" name="ocupacion">
+        </div><br>
+
+        <!--CAMPO 11-->
+        <div class="formulario">
+            <label for="dni_alumno">DNI DEL ALUMNO A CARGO</label><br>
+            <input type="text" id="dni_alumno" name="dni_alumno">
+        </div><br>
+
+        <!--CAMPO 12-->
+        <div class="formulario">
+            <label for="nombre_alumno">NOMBRE COMPLETO DEL ALUMNO</label><br>
+            <input type="text" id="nombre_alumno" name="nombre_alumno">
+        </div><br>
+
+        <button type="submit">Guardar</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

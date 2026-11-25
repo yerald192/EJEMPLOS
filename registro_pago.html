@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRO DE PAGOS Y PENSIONES</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <form id="formPago">
+        <h1 id="titulo">REGISTRO DE PAGOS Y PENSIONES</h1>
+
+        <!--CAMPO 1-->
+        <div class="formulario">
+            <label for="numero_recibo">NUMERO DE RECIBO / COMPROBANTE</label><br>
+            <input type="text" id="numero_recibo" name="numero_recibo">
+        </div><br>
+
+        <!--CAMPO 2-->
+        <div class="formulario">
+            <label for="dni_alumno">DNI DEL ALUMNO</label><br>
+            <input type="text" id="dni_alumno" name="dni_alumno">
+        </div><br>
+
+        <!--CAMPO 3-->
+        <div class="formulario">
+            <label for="nombre_alumno">NOMBRES Y APELLIDOS DEL ALUMNO</label><br>
+            <input type="text" id="nombre_alumno" name="nombre_alumno">
+        </div><br>
+
+        <!--CAMPO 4-->
+        <div class="formulario">
+            <label for="concepto">CONCEPTO DE PAGO</label><br>
+            <select id="concepto" name="concepto">
+                <option value="matricula">MATRICULA</option>
+                <option value="pension">PENSION MENSUAL</option>
+                <option value="certificado">CERTIFICADO DE ESTUDIOS</option>
+                <option value="carnet">CARNET UNIVERSITARIO</option>
+                <option value="grado">TRAMITE DE GRADO</option>
+            </select>
+        </div><br>
+
+        <!--CAMPO 5-->
+        <div class="formulario">
+            <label for="mes">MES CORRESPONDIENTE</label><br>
+            <select id="mes" name="mes">
+                <option value="marzo">MARZO</option>
+                <option value="abril">ABRIL</option>
+                <option value="mayo">MAYO</option>
+                <option value="junio">JUNIO</option>
+                <option value="julio">JULIO</option>
+                <option value="agosto">AGOSTO</option>
+                <option value="setiembre">SETIEMBRE</option>
+                <option value="octubre">OCTUBRE</option>
+                <option value="noviembre">NOVIEMBRE</option>
+                <option value="diciembre">DICIEMBRE</option>
+            </select>
+        </div><br>
+
+        <!--CAMPO 6-->
+        <div class="formulario">
+            <label for="monto">MONTO (S/.)</label><br>
+            <input type="text" id="monto" name="monto">
+        </div><br>
+
+        <!--CAMPO 7-->
+        <div class="formulario">
+            <label for="metodo">MEDIO DE PAGO</label><br>
+            <select id="metodo" name="metodo">
+                <option value="efectivo">EFECTIVO</option>
+                <option value="tarjeta">TARJETA DE CREDITO</option>
+                <option value="transferencia">TRANSFERENCIA BANCARIA</option>
+                <option value="billetera">YAPE</option>
+            </select>
+        </div><br>
+
+        <!--CAMPO 8-->
+        <div class="formulario">
+            <label for="nro_operacion">NUMERO DE OPERACION</label><br>
+            <input type="text" id="nro_operacion" name="nro_operacion">
+        </div><br>
+
+        <!--CAMPO 9-->
+        <div class="formulario">
+            <label for="fecha_pago">FECHA DE PAGO</label><br>
+            <input type="text" id="fecha_pago" name="fecha_pago">
+        </div><br>
+
+        <!--CAMPO 10-->
+        <div class="formulario">
+            <label for="estado">ESTADO DE PAGO</label><br>
+            <select id="estado" name="estado">
+                <option value="pagado">PAGADO</option>
+                <option value="pendiente">PENDIENTE</option>
+                <option value="anulado">ANULADO</option>
+            </select>
+        </div><br>
+
+        <!--CAMPO 11-->
+        <div class="formulario">
+            <label for="descuento">DESCUENTO APLICADO</label><br>
+            <input type="text" id="descuento" name="descuento">
+        </div><br>
+
+        <!--CAMPO 12-->
+        <div class="formulario">
+            <label for="cajero">CAJERO / RESPONSABLE</label><br>
+            <input type="text" id="cajero" name="cajero">
+        </div><br>
+
+        <button type="submit">Guardar</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

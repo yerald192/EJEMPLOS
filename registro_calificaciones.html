@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRO DE CALIFICACIONES</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <form id="formCalificaciones">
+        <h1 id="titulo">REGISTRO DE CALIFICACIONES</h1>
+
+        <!--CAMPO 1-->
+        <div class="formulario">
+            <label for="codigo_curso">CODIGO DEL CURSO</label><br>
+            <input type="text" id="codigo_curso" name="codigo_curso">
+        </div><br>
+
+        <!--CAMPO 2-->
+        <div class="formulario">
+            <label for="nombre_curso">NOMBRE DEL CURSO</label><br>
+            <input type="text" id="nombre_curso" name="nombre_curso">
+        </div><br>
+
+        <!--CAMPO 3-->
+        <div class="formulario">
+            <label for="dni_alumno">DNI DEL ALUMNO</label><br>
+            <input type="text" id="dni_alumno" name="dni_alumno">
+        </div><br>
+
+        <!--CAMPO 4-->
+        <div class="formulario">
+            <label for="nombre_alumno">NOMBRE DEL ALUMNO</label><br>
+            <input type="text" id="nombre_alumno" name="nombre_alumno">
+        </div><br>
+
+        <!--CAMPO 5-->
+        <div class="formulario">
+            <label for="evaluacion_1">NOTA EVALUACION CONTINUA 1</label><br>
+            <input type="text" id="evaluacion_1" name="evaluacion_1">
+        </div><br>
+
+        <!--CAMPO 6-->
+        <div class="formulario">
+            <label for="examen_parcial">NOTA EXAMEN PARCIAL</label><br>
+            <input type="text" id="examen_parcial" name="examen_parcial">
+        </div><br>
+
+        <!--CAMPO 7-->
+        <div class="formulario">
+            <label for="evaluacion_2">NOTA EVALUACION CONTINUA 2</label><br>
+            <input type="text" id="evaluacion_2" name="evaluacion_2">
+        </div><br>
+
+        <!--CAMPO 8-->
+        <div class="formulario">
+            <label for="examen_final">NOTA EXAMEN FINAL</label><br>
+            <input type="text" id="examen_final" name="examen_final">
+        </div><br>
+
+        <!--CAMPO 9-->
+        <div class="formulario">
+            <label for="sustitutorio">NOTA EXAMEN SUSTITUTORIO</label><br>
+            <input type="text" id="sustitutorio" name="sustitutorio">
+        </div><br>
+
+        <!--CAMPO 10-->
+        <div class="formulario">
+            <label for="promedio">PROMEDIO FINAL</label><br>
+            <input type="text" id="promedio" name="promedio">
+        </div><br>
+
+        <!--CAMPO 11-->
+        <div class="formulario">
+            <label for="condicion">CONDICION</label><br>
+            <select id="condicion" name="condicion">
+                <option value="aprobado">APROBADO</option>
+                <option value="desaprobado">DESAPROBADO</option>
+                <option value="recuperacion">EN RECUPERACION</option>
+            </select>
+        </div><br>
+
+        <!--CAMPO 12-->
+        <div class="formulario">
+            <label for="observaciones">OBSERVACIONES DEL DOCENTE</label><br>
+            <input type="text" id="observaciones" name="observaciones">
+        </div><br>
+
+        <button type="submit">Guardar</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

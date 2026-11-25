@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRO DE SOLICITUD DE BECA</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <form id="formBeca">
+        <h1 id="titulo">REGISTRO DE SOLICITUD DE BECA</h1>
+
+        <!--CAMPO 1-->
+        <div class="formulario">
+            <label for="codigo_solicitud">CODIGO DE SOLICITUD</label><br>
+            <input type="text" id="codigo_solicitud" name="codigo_solicitud">
+        </div><br>
+
+        <!--CAMPO 2-->
+        <div class="formulario">
+            <label for="dni_postulante">DNI DEL POSTULANTE</label><br>
+            <input type="text" id="dni_postulante" name="dni_postulante">
+        </div><br>
+
+        <!--CAMPO 3-->
+        <div class="formulario">
+            <label for="nombres_postulante">NOMBRES Y APELLIDOS</label><br>
+            <input type="text" id="nombres_postulante" name="nombres_postulante">
+        </div><br>
+
+        <!--CAMPO 4-->
+        <div class="formulario">
+            <label for="carrera">CARRERA</label><br>
+            <select id="carrera" name="carrera">
+                <option value="diseno_web">DISEÑO WEB</option>
+                <option value="ing_software">ING. SOFTWARE</option>
+                <option value="ing_sistemas">ING. SISTEMAS</option>
+                <option value="computacion">COMPUTACION INFORMATICA</option>
+            </select>
+        </div><br>
+
+        <!--CAMPO 5-->
+        <div class="formulario">
+            <label for="promedio">PROMEDIO PONDERADO ACTUAL</label><br>
+            <input type="text" id="promedio" name="promedio">
+        </div><br>
+
+        <!--CAMPO 6-->
+        <div class="formulario">
+            <label for="tipo_beca">TIPO DE BECA</label><br>
+            <select id="tipo_beca" name="tipo_beca">
+                <option value="socioeconomica">BECA SOCIOECONOMICA</option>
+                <option value="excelencia">BECA POR EXCELENCIA ACADEMICA</option>
+                <option value="deportiva">BECA DEPORTIVA</option>
+                <option value="cultural">BECA CULTURAL</option>
+            </select>
+        </div><br>
+
+        <!--CAMPO 7-->
+        <div class="formulario">
+            <label for="ingreso_familiar">INGRESO FAMILIAR MENSUAL (S/.)</label><br>
+            <input type="text" id="ingreso_familiar" name="ingreso_familiar">
+        </div><br>
+
+        <!--CAMPO 8-->
+        <div class="formulario">
+            <label for="miembros">NUMERO DE MIEMBROS EN LA FAMILIA</label><br>
+            <input type="text" id="miembros" name="miembros">
+        </div><br>
+
+        <!--CAMPO 9-->
+        <div class="formulario">
+            <label for="tipo_vivienda">TIPO DE VIVIENDA</label><br>
+            <select id="tipo_vivienda" name="tipo_vivienda">
+                <option value="propia">PROPIA</option>
+                <option value="alquilada">ALQUILADA</option>
+                <option value="alojado">ALOJADO / FAMILIAR</option>
+            </select>
+        </div><br>
+
+        <!--CAMPO 10-->
+        <div class="formulario">
+            <label for="documento_adjunto">DOCUMENTO DE SUSTENTO ADJUNTO</label><br>
+            <select id="documento_adjunto" name="documento_adjunto">
+                <option value="boleta">BOLETA DE PAGO / DECLARACION JURADA</option>
+                <option value="notas">RECORD DE NOTAS</option>
+                <option value="constancia_deporte">CONSTANCIA DEPORTIVA FEDERADA</option>
+            </select>
+        </div><br>
+
+        <!--CAMPO 11-->
+        <div class="formulario">
+            <label for="fecha_postulacion">FECHA DE POSTULACION</label><br>
+            <input type="text" id="fecha_postulacion" name="fecha_postulacion">
+        </div><br>
+
+        <!--CAMPO 12-->
+        <div class="formulario">
+            <label for="estado_solicitud">ESTADO DE SOLICITUD</label><br>
+            <select id="estado_solicitud" name="estado_solicitud">
+                <option value="evaluacion">EN EVALUACION</option>
+                <option value="aprobado">APROBADO</option>
+                <option value="rechazado">RECHAZADO</option>
+            </select>
+        </div><br>
+
+        <button type="submit">Guardar</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

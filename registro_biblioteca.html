@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRO DE LIBROS DE BIBLIOTECA</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <form id="formBiblioteca">
+        <h1 id="titulo">REGISTRO DE LIBROS DE BIBLIOTECA</h1>
+
+        <!--CAMPO 1-->
+        <div class="formulario">
+            <label for="isbn">CODIGO ISBN</label><br>
+            <input type="text" id="isbn" name="isbn">
+        </div><br>
+
+        <!--CAMPO 2-->
+        <div class="formulario">
+            <label for="titulo_libro">TITULO DEL LIBRO</label><br>
+            <input type="text" id="titulo_libro" name="titulo_libro">
+        </div><br>
+
+        <!--CAMPO 3-->
+        <div class="formulario">
+            <label for="autor">AUTOR(ES)</label><br>
+            <input type="text" id="autor" name="autor">
+        </div><br>
+
+        <!--CAMPO 4-->
+        <div class="formulario">
+            <label for="editorial">EDITORIAL</label><br>
+            <input type="text" id="editorial" name="editorial">
+        </div><br>
+
+        <!--CAMPO 5-->
+        <div class="formulario">
+            <label for="anio_publicacion">AÑO DE PUBLICACION</label><br>
+            <input type="text" id="anio_publicacion" name="anio_publicacion">
+        </div><br>
+
+        <!--CAMPO 6-->
+        <div class="formulario">
+            <label for="edicion">EDICION</label><br>
+            <input type="text" id="edicion" name="edicion">
+        </div><br>
+
+        <!--CAMPO 7-->
+        <div class="formulario">
+            <label for="categoria">CATEGORIA / MATERIA</label><br>
+            <select id="categoria" name="categoria">
+                <option value="informatica">INFORMATICA Y PROGRAMACION</option>
+                <option value="redes">REDES Y TELECOMUNICACIONES</option>
+                <option value="matematicas">MATEMATICAS Y LOGICA</option>
+                <option value="base_datos">BASES DE DATOS</option>
+                <option value="ia">INTELIGENCIA ARTIFICIAL</option>
+                <option value="literatura">LITERATURA GENERAL</option>
+            </select>
+        </div><br>
+
+        <!--CAMPO 8-->
+        <div class="formulario">
+            <label for="paginas">NUMERO DE PAGINAS</label><br>
+            <input type="text" id="paginas" name="paginas">
+        </div><br>
+
+        <!--CAMPO 9-->
+        <div class="formulario">
+            <label for="ejemplares">CANTIDAD DE EJEMPLARES</label><br>
+            <input type="text" id="ejemplares" name="ejemplares">
+        </div><br>
+
+        <!--CAMPO 10-->
+        <div class="formulario">
+            <label for="estante">NUMERO DE ESTANTE / PASILLO</label><br>
+            <input type="text" id="estante" name="estante">
+        </div><br>
+
+        <!--CAMPO 11-->
+        <div class="formulario">
+            <label for="estado_conservacion">ESTADO DE CONSERVACION</label><br>
+            <select id="estado_conservacion" name="estado_conservacion">
+                <option value="nuevo">NUEVO</option>
+                <option value="bueno">BUENO</option>
+                <option value="regular">REGULAR</option>
+                <option value="deteriorado">DETERIORADO</option>
+            </select>
+        </div><br>
+
+        <!--CAMPO 12-->
+        <div class="formulario">
+            <label for="disponibilidad">DISPONIBILIDAD</label><br>
+            <select id="disponibilidad" name="disponibilidad">
+                <option value="prestamo">DISPONIBLE PARA PRESTAMO</option>
+                <option value="sala">SOLO LECTURA EN SALA</option>
+                <option value="prestado">PRESTADO</option>
+            </select>
+        </div><br>
+
+        <button type="submit">Guardar</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

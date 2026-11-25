@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRO DE ALUMNOS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <form id="formAlumno">
+        <h1 id="titulo">REGISTRO DE ALUMNOS</h1>
+
+        <!--CAMPO 1-->
+        <div class="formulario">
+            <label for="nombre">NOMBRE</label><br>
+            <input type="text" id="nombre" name="nombre">
+        </div><br>
+
+        <!--CAMPO 2-->
+        <div class="formulario">
+            <label for="paterno">APELLIDO PATERNO</label><br>
+            <input type="text" id="paterno" name="paterno">
+        </div><br>
+
+        <!--CAMPO 3-->
+        <div class="formulario">
+            <label for="materno">APELLIDO MATERNO</label><br>
+            <input type="text" id="materno" name="materno">
+        </div><br>
+
+        <!--CAMPO 4-->
+        <div class="formulario">
+            <label for="dni">DNI</label><br>
+            <input type="text" id="dni" name="dni">
+        </div><br>
+
+        <!--CAMPO 5-->
+        <div class="formulario">
+            <label for="correo">CORREO ELECTRONICO</label><br>
+            <input type="text" id="correo" name="correo">
+        </div><br>
+
+        <!--CAMPO 6-->
+        <div class="formulario">
+            <label for="telefono">TELEFONO</label><br>
+            <input type="text" id="telefono" name="telefono">
+        </div><br>
+
+        <!--CAMPO 7-->
+        <div class="formulario">
+            <label for="direccion">DIRECCION</label><br>
+            <input type="text" id="direccion" name="direccion">
+        </div><br>
+
+        <!--CAMPO 8-->
+        <div class="formulario">
+            <label for="fecha_nacimiento">FECHA DE NACIMIENTO</label><br>
+            <input type="text" id="fecha_nacimiento" name="fecha_nacimiento">
+        </div><br>
+
+        <!--CAMPO 9-->
+        <div class="formulario">
+            <label for="edad">EDAD</label><br>
+            <input type="text" id="edad" name="edad">
+        </div><br>
+
+        <!--CAMPO 10-->
+        <div class="formulario">
+            <label for="genero">GENERO</label><br>
+            <select id="genero" name="genero">
+                <option value="masculino">MASCULINO</option>
+                <option value="femenino">FEMENINO</option>
+                <option value="otro">OTRO</option>
+            </select>
+        </div><br>
+
+        <!--CAMPO 11-->
+        <div class="formulario">
+            <label for="carrera">CARRERA / ESPECIALIDAD</label><br>
+            <select id="carrera" name="carrera">
+                <option value="diseno_web">DISEÑO WEB</option>
+                <option value="ing_software">ING. SOFTWARE</option>
+                <option value="ing_sistemas">ING. SISTEMAS</option>
+                <option value="computacion">COMPUTACION E INFORMATICA</option>
+            </select>
+        </div><br>
+
+        <!--CAMPO 12-->
+        <div class="formulario">
+            <label for="ciclo">CICLO ACADEMICO</label><br>
+            <select id="ciclo" name="ciclo">
+                <option value="I">I CICLO</option>
+                <option value="II">II CICLO</option>
+                <option value="III">III CICLO</option>
+                <option value="IV">IV CICLO</option>
+                <option value="V">V CICLO</option>
+                <option value="VI">VI CICLO</option>
+            </select>
+        </div><br>
+
+        <!--CAMPO 13-->
+        <div class="formulario">
+            <label for="turno">TURNO</label><br>
+            <select id="turno" name="turno">
+                <option value="manana">MAÑANA</option>
+                <option value="tarde">TARDE</option>
+                <option value="noche">NOCHE</option>
+            </select>
+        </div><br>
+
+        <!--CAMPO 14-->
+        <div class="formulario">
+            <label for="condicion">CONDICION DE ESTUDIANTE</label><br>
+            <select id="condicion" name="condicion">
+                <option value="regular">REGULAR</option>
+                <option value="becado">BECADO</option>
+                <option value="traslado">TRASLADO</option>
+            </select>
+        </div><br>
+
+        <!--CAMPO 15-->
+        <div class="formulario">
+            <label for="contacto_emergencia">CONTACTO DE EMERGENCIA</label><br>
+            <input type="text" id="contacto_emergencia" name="contacto_emergencia">
+        </div><br>
+
+        <button type="submit">Guardar</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

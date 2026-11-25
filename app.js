@@ -1,7 +1,8 @@
 $(document).ready(function () {
-    /* ANIMACION DE INGRESO AL RECARGAR PAGINA */
-    $("#formDocente").hide().fadeIn(800);
-    /*ANIMACION AL TOCAR LOS CAMPOS PARA LLENAR*/
+    /* ANIMACION DE INGRESO AL RECARGAR PAGINA PARA TODOS LOS FORMULARIOS */
+    $("form, .menu-contenedor").hide().fadeIn(800);
+
+    /* ANIMACION AL TOCAR LOS CAMPOS PARA LLENAR */
     $("input[type='text'], select").on("focus", function () {
         $(this)
             .addClass("campo-activo")
@@ -13,5 +14,4 @@ $(document).ready(function () {
             .stop()
             .animate({ paddingLeft: "5px" }, 200);
     });
-     
 });
